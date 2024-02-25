@@ -1,7 +1,7 @@
 //import akashaTech from "../services/akashaTech"
 const ErrorHander = require("../utils/errorhander");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors")
-const ApiFeatures = require("../utils/apiFeatures"); 
+const ApiFeatures = require("../utils/apifeatures"); 
 const Product = require("../models/productModel");
 const cloudinary = require("cloudinary");
 
