@@ -1,12 +1,12 @@
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const { v4: uuidv4 } = require('uuid');
-const WebSocket = require('ws'); 
+//const WebSocket = require('ws'); 
 const express = require('express');
 const app = express();
 const http = require('http');
-const server = http.createServer(app);
-const wss = new WebSocket.Server({ port: 4100 });
+//const server = http.createServer(app);
+//const wss = new WebSocket.Server({ port: 4100 });
 let statusOrder = null;
 
 exports.processPayment = catchAsyncErrors(async (req, res, next) => {
